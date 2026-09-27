@@ -69,7 +69,7 @@ export function Header() {
 
   return (
     <header className="fixed top-0 w-full z-50">
-      <div className="bg-black/40 backdrop-blur-2xl border-b border-white/10 relative overflow-hidden">
+      <div className="bg-black/40 backdrop-blur-2xl border-b border-white/10 relative">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 relative z-10">
           <div className="flex items-center gap-3 sm:gap-4">
             {/* Company Name with Animation */}
