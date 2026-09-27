@@ -8,20 +8,14 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 relative z-10">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-8 sm:mb-12">
           <div className="sm:col-span-2">
-            <div className="flex items-center gap-4 mb-5">
-              <div className="w-24 h-24 rounded-full bg-white overflow-hidden shrink-0">
-                <Image
-                  src="/chemplus-logo.png"
-                  alt="ChemPlus Pharma Private Limited logo"
-                  width={160}
-                  height={160}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div>
-                <h3 className="text-lg font-bold text-white mb-1">ChemPlus Pharma</h3>
-                <p className="text-xs text-sky-400 font-medium">Private Limited</p>
-              </div>
+            <div className="inline-block mb-5 rounded-xl bg-white p-2">
+              <Image
+                src="/chemplus-logo-wide.png"
+                alt="ChemPlus Pharma Private Limited – Innovating for a Healthier Future"
+                width={800}
+                height={452}
+                className="w-56 sm:w-64 h-auto"
+              />
             </div>
             <p className="text-sm text-white/70 leading-relaxed max-w-md mb-4">
               Your trusted partner in pharmaceutical distribution, committed to quality and reliability.

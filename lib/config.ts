@@ -50,12 +50,12 @@ export const config: AppConfig = {
   resendApiKey: process.env.RESEND_API_KEY || '',
   
   email: {
-    from: getEnvVar('EMAIL_FROM', 'onboarding@resend.dev'),
-    to: getEnvVar('EMAIL_TO', 'admin@chempluspharma.com'),
+    from: 'onboarding@resend.dev',
+    to: 'admin@chempluspharma.com',
   },
-  
-  appUrl: getEnvVar('APP_URL', 'http://localhost:3000'),
-  publicAppUrl: getEnvVar('NEXT_PUBLIC_APP_URL', 'http://localhost:3000'),
+
+  appUrl: 'https://chempluspharma.com',
+  publicAppUrl: 'https://chempluspharma.com',
 }
 
 // Warn (don't throw) so builds without secrets still succeed; send-email handles a missing key
