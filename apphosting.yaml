@@ -1,0 +1,28 @@
+# Firebase App Hosting configuration
+# https://firebase.google.com/docs/app-hosting/configure
+
+runConfig:
+  cpu: 1
+  memoryMiB: 512
+  concurrency: 80
+  minInstances: 0 # set to 1 to avoid cold starts (incurs cost)
+  maxInstances: 4
+
+env:
+  # RESEND_API_KEY must be provided as a secret (see .env.example).
+
+  - variable: EMAIL_FROM
+    value: onboarding@resend.dev
+    availability:
+      - RUNTIME
+
+  - variable: EMAIL_TO
+    value: admin@chempluspharma.com
+    availability:
+      - RUNTIME
+
+  - variable: NEXT_TELEMETRY_DISABLED
+    value: "1"
+    availability:
+      - BUILD
+      - RUNTIME

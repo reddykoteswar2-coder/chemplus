@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+
+# env files (secrets live in Cloud Secret Manager on Firebase)
+.env
+.env*.local
+
+# firebase
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+apphosting.local.yaml
+
+# misc
+.DS_Store
+*.tsbuildinfo
+
+# vercel
+.vercel
